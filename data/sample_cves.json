@@ -1,0 +1,20 @@
+[
+  {
+    "cve_id": "CVE-2023-12345",
+    "product": "wordpress",
+    "component": "core",
+    "affected_versions": ["<6.4.3"],
+    "severity": "high",
+    "description": "Example WordPress core vulnerability for demo purposes.",
+    "remediation": "Update WordPress core to 6.4.3 or later."
+  },
+  {
+    "cve_id": "CVE-2024-22001",
+    "product": "joomla",
+    "component": "core",
+    "affected_versions": ["<4.4.1"],
+    "severity": "critical",
+    "description": "Example Joomla core vulnerability for demo purposes.",
+    "remediation": "Upgrade Joomla to 4.4.1 or later."
+  }
+]
