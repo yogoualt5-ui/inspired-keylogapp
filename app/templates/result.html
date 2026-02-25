@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Result</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; background: #0b1020; color: #e2e8f0; }
+    .box { max-width: 900px; margin: auto; background: #111827; border-radius: 10px; padding: 1rem 1.2rem; }
+    pre { white-space: pre-wrap; background: #020617; padding: .8rem; border-radius: 8px; overflow-wrap: anywhere; }
+    a { color: #93c5fd; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>{{ mode|capitalize }} endpoint result</h1>
+    <p><strong>Command:</strong> <code>{{ command }}</code></p>
+    <pre>{{ output }}</pre>
+    <p><a href="/">Back to challenge</a></p>
+  </div>
+</body>
+</html>

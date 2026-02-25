@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beginner Mitigation Attack Box</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; background: #111827; color: #f3f4f6; }
+    .wrap { max-width: 850px; margin: auto; }
+    .card { background: #1f2937; padding: 1rem 1.2rem; border-radius: 10px; margin-bottom: 1rem; }
+    input, button { padding: .55rem; border-radius: 6px; border: 1px solid #374151; }
+    input { width: 70%; background: #0f172a; color: #e5e7eb; }
+    button { background: #0ea5e9; color: #fff; cursor: pointer; }
+    code { color: #93c5fd; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Mitigation Attack Box (CTF Starter)</h1>
+    <p>Goal: exploit <code>/vuln-ping</code> with command injection, then verify mitigation on <code>/safe-ping</code>.</p>
+
+    <div class="card">
+      <h2>1) Vulnerable endpoint</h2>
+      <form action="/vuln-ping" method="post">
+        <input name="host" placeholder="Try: 127.0.0.1; echo BEGINNER_PWNED" required />
+        <button type="submit">Run vulnerable ping</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>2) Mitigated endpoint</h2>
+      <form action="/safe-ping" method="post">
+        <input name="host" placeholder="Try same payload to see it blocked" required />
+        <button type="submit">Run safe ping</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Rules</h3>
+      <ul>
+        <li>No brute-force needed.</li>
+        <li>One payload is enough to get the flag.</li>
+        <li>Then explain why mitigation stops it.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
