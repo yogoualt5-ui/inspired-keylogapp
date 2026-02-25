@@ -1,0 +1,2 @@
+packaging==24.2
+pytest==8.3.4
